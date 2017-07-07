@@ -7,7 +7,11 @@
 
 namespace CodeMommy\FilePHP;
 
-class File
+/**
+ * Class Image
+ * @package CodeMommy\FilePHP
+ */
+class Image
 {
 
 }

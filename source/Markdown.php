@@ -8,9 +8,10 @@
 namespace CodeMommy\FilePHP;
 
 /**
- * Class Txt
+ * Class Markdown
  * @package CodeMommy\FilePHP
  */
-class Txt extends Text
+class Markdown
 {
+    
 }
