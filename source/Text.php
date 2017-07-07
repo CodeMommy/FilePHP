@@ -11,7 +11,7 @@ namespace CodeMommy\FilePHP;
  * Class Text
  * @package CodeMommy\FilePHP
  */
-class Text
+class Text extends File
 {
     /**
      * @param $file
@@ -20,5 +20,15 @@ class Text
     public static function read($file)
     {
         return file_get_contents($file);
+    }
+
+    /**
+     * @param $file
+     * @param $data
+     * @return bool|int
+     */
+    public static function write($file, $data)
+    {
+        return file_put_contents($file, $data);
     }
 }

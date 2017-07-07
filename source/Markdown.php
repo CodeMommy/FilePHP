@@ -11,7 +11,7 @@ namespace CodeMommy\FilePHP;
  * Class Markdown
  * @package CodeMommy\FilePHP
  */
-class Markdown
+class Markdown extends Text
 {
     
 }

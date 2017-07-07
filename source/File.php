@@ -8,10 +8,10 @@
 namespace CodeMommy\FilePHP;
 
 /**
- * Class Image
+ * Class File
  * @package CodeMommy\FilePHP
  */
-class Image extends File
+class File
 {
 
 }
