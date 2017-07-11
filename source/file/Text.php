@@ -24,6 +24,7 @@ class Text extends File
     }
 
     /**
+     * Write
      * @param string $file
      * @param string $data
      * @return bool|int

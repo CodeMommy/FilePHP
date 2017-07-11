@@ -14,7 +14,8 @@ namespace CodeMommy\FilePHP;
 class JSON extends Text
 {
     /**
-     * @param $content
+     * To Array From Content
+     * @param string $content
      * @return mixed
      */
     public static function toArrayFromContent($content = '')
@@ -23,16 +24,18 @@ class JSON extends Text
     }
 
     /**
-     * @param $file
+     * To Array From File
+     * @param string $file
      * @return mixed
      */
-    public static function toArrayFromFile($file)
+    public static function toArrayFromFile($file = '')
     {
         $content = self::read($file);
         return self::toArrayFromContent($content);
     }
 
     /**
+     * To Content From Array
      * @param array $array
      * @return string
      */
@@ -42,6 +45,7 @@ class JSON extends Text
     }
 
     /**
+     * To File From Array
      * @param string $file
      * @param array $array
      * @return bool|int
