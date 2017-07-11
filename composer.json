@@ -22,7 +22,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "CodeMommy\\FilePHP\\": ["source/", "alias/"]
+      "CodeMommy\\FilePHP\\": [
+        "source/alias",
+        "source/base",
+        "source/file"
+      ]
     }
   },
   "require-dev": {

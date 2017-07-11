@@ -16,8 +16,27 @@ use CodeMommy\FilePHP\Text;
  */
 class TextTest extends TestCase
 {
+    /**
+     * Test function of write
+     */
+    public function testWrite()
+    {
+        $file = sprintf('%s/file/%s_%s.test', __DIR__, __CLASS__, __FUNCTION__);
+        $word = 'test';
+        Text::write($file, $word);
+        $this->assertEquals($word, Text::read($file));
+        Text::delete($file);
+    }
+
+    /**
+     * Test function of read
+     */
     public function testRead()
     {
-        $this->assertEquals('text', Text::read('./file/Text.txt'));
+        $file = sprintf('%s/file/%s_%s.test', __DIR__, __CLASS__, __FUNCTION__);
+        $word = 'test';
+        Text::write($file, $word);
+        $this->assertEquals($word, Text::read($file));
+        Text::delete($file);
     }
 }

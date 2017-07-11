@@ -14,20 +14,21 @@ namespace CodeMommy\FilePHP;
 class Text extends File
 {
     /**
-     * @param $file
+     * Read
+     * @param string $file
      * @return bool|string
      */
-    public static function read($file)
+    public static function read($file = '')
     {
         return file_get_contents($file);
     }
 
     /**
-     * @param $file
-     * @param $data
+     * @param string $file
+     * @param string $data
      * @return bool|int
      */
-    public static function write($file, $data)
+    public static function write($file = '', $data = '')
     {
         return file_put_contents($file, $data);
     }
