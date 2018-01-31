@@ -1,13 +1,12 @@
 {
   "name": "codemommy/filephp",
-  "version": "0.0.1",
   "description": "Operate Files",
   "keywords": [
     "CodeMommy",
     "FilePHP",
     "PHP"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "homepage": "http://www.codemommy.com",
   "support": {
     "issues": "https://github.com/CodeMommy/FilePHP/issues",
