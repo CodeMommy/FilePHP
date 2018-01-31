@@ -25,7 +25,8 @@
       "CodeMommy\\FilePHP\\": [
         "source/alias",
         "source/base",
-        "source/file"
+        "source/file",
+        "source/iterator"
       ]
     }
   },
